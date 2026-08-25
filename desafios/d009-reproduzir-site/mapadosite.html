@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa do Site</title>
+    <style>
+        @page {
+            size: A4 landscape;
+            margin: 20mm;
+            background-color: #f4f7f6;
+        }
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #2c3e50;
+            text-align: center;
+            box-sizing: border-box;
+            background-color: #f4f7f6;
+        }
+        *, *::before, *::after { box-sizing: border-box; }
+        
+        .header {
+            margin-bottom: 40px;
+            padding-top: 20px;
+        }
+        h1 {
+            font-size: 26pt;
+            color: #2980b9;
+            margin-bottom: 5px;
+            border-bottom: 3px solid #3498db;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 14pt;
+            color: #7f8c8d;
+            margin-top: 0;
+        }
+        
+        .sitemap-container {
+            margin-top: 30px;
+            width: 100%;
+        }
+        
+        .box {
+            background-color: #ffffff;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            padding: 20px;
+            display: inline-block;
+            width: 220px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            vertical-align: top;
+        }
+        
+        .main-box {
+            background-color: #e1f0fa;
+            border-color: #2980b9;
+            width: 280px;
+            font-weight: bold;
+            font-size: 18pt;
+            margin: 0 auto;
+        }
+        
+        .main-box small {
+            display: block;
+            font-size: 12pt;
+            font-weight: normal;
+            color: #555;
+            margin-top: 5px;
+        }
+        
+        .connection {
+            margin: 25px 0;
+            font-size: 24pt;
+            color: #95a5a6;
+            line-height: 1.2;
+        }
+        
+        .connection small {
+            display: block;
+            font-size: 11pt;
+            color: #7f8c8d;
+        }
+        
+        .sub-level {
+            margin-top: 10px;
+            display: table;
+            width: 100%;
+        }
+        
+        .sub-level-row {
+            display: table-row;
+        }
+        
+        .sub-level-cell {
+            display: table-cell;
+            text-align: center;
+            padding: 0 10px;
+        }
+        
+        .sub-box {
+            font-size: 16pt;
+            font-weight: bold;
+            color: #34495e;
+            width: 100%;
+            min-height: 120px;
+        }
+        
+        .sub-box small {
+            display: block;
+            font-size: 11pt;
+            font-weight: normal;
+            color: #7f8c8d;
+            margin-top: 15px;
+            line-height: 1.4;
+        }
+        
+        .legend {
+            margin-top: 60px;
+            font-size: 12pt;
+            text-align: left;
+            background-color: #fff;
+            border-left: 5px solid #f39c12;
+            padding: 15px 20px;
+            display: inline-block;
+            color: #555;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Mapa do Site (Sitemap)</h1>
+        <p>Projeto de Estudos HTML5 e CSS3 - Desafio dos Vídeos</p>
+    </div>
+    
+    <div class="sitemap-container">
+        <!-- Nível Principal -->
+        <div class="box main-box">
+            index.html
+            <small>(Página Principal - Thumbs)</small>
+        </div>
+        
+        <!-- Setas de Conexão -->
+        <div class="connection">
+            &#8593; &nbsp; &#8595;
+            <small>Navegação de ida (clique na thumb) e volta (clique na setinha)</small>
+        </div>
+        
+        <!-- Nível Secundário (Vídeos) -->
+        <div class="sub-level">
+            <div class="sub-level-row">
+                <div class="sub-level-cell">
+                    <div class="box sub-box">
+                        html.html
+                        <small>Vídeo de HTML5<br>+ Link Playlist<br>+ Botão Voltar</small>
+                    </div>
+                </div>
+                <div class="sub-level-cell">
+                    <div class="box sub-box">
+                        javascript.html
+                        <small>Vídeo de JS<br>+ Link Playlist<br>+ Botão Voltar</small>
+                    </div>
+                </div>
+                <div class="sub-level-cell">
+                    <div class="box sub-box">
+                        hardware.html
+                        <small>Vídeo de Hardware<br>+ Link Playlist<br>+ Botão Voltar</small>
+                    </div>
+                </div>
+                <div class="sub-level-cell">
+                    <div class="box sub-box">
+                        python.html
+                        <small>Vídeo de Python<br>+ Link Playlist<br>+ Botão Voltar</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="legend">
+        <strong>Estrutura de Arquivos:</strong> Salve todos os 5 arquivos <code>.html</code> na mesma pasta principal do seu computador.
+    </div>
+</body>
+</html>
