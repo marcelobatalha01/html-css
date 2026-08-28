@@ -26,6 +26,7 @@ header {
     background-color: black;
     color: white;
     text-align: center;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.27) ;
 }
 
 header > h1 {
@@ -37,6 +38,10 @@ header > h1 {
 
 header > p {
     padding-bottom: 50px;
+}
+
+footer > p {
+    font-size: 2vw;
 }
 
 header a, footer a {
@@ -56,29 +61,45 @@ section {
     padding-left: 30px;
     font-family: var(--fonte3);
     font-size: 3.5vw;
-    }
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.373);
+}
 
-    section.fundo-brando {
+section.fundo-brando {
     background-color: white;
-    color: black;
+    color: black;  
 }
 
 section.imagem {
-    background-color: rgb(215, 111, 111);
+    background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 15px 15px 15px 0px rgba(0, 0, 0, 0.67);
+    background-attachment: fixed;
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.282);
     display: inline-block;
-    padding: 5px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.437);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.517);
+    }
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
 }
 
 footer {
     background-color: black;
-    color: white;
+    color: rgb(235, 243, 12);
     text-align: center;
-    padding: 10px;    
+    padding: 15px;    
 }
 
 
