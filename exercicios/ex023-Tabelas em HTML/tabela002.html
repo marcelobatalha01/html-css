@@ -5,11 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas Grandes</title>
 
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8em;
+        }
+        table.tab1{
+            width: 800px;
+            border-collapse: collapse;
+        }
+
+        table.tab2{
+            width: 650px;
+            border-collapse: collapse;
+        }
+
+        table.tab1 > thead{
+            background-color: rgb(90, 113, 172);
+            color: white;
+        }
+
+        table.tab2 > thead{
+            background-color: rgb(192, 93, 54);
+            color: white;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+    </style>
+
 
 </head>
 <body>
     <h1>Cenário do contigente policial por Estado (2026)</h1>
-    <table>
+    <table class="tab1">
         <thead>
             <tr>
                 <th>Intituição</th>
@@ -24,40 +62,43 @@
         <tbody>
             <tr>
                 <th>Polícia Militar</th>
-                <th>Estadual (27 UFs)</th>
-                <th>413.319</th>
-                <th>628.732</th>
-                <th>215.413</th>
-                <th>34,2%</th>
+                <td>Estadual (27 UFs)</td>
+                <td>413.319</td>
+                <td>628.732</td>
+                <td>215.413</td>
+                <td>34,2%</td>
             </tr>
             <tr>
                 <th>Polícia Civil</th>
-                <th>Estadual (27 UFs)</th>
-                <th>96.902</th>
-                <th>175.477</th>
-                <th>78.575</th>
-                <th>344.8%</th>
+                <td>Estadual (27 UFs)</td>
+                <td>96.902</td>
+                <td>175.477</td>
+                <td>78.575</td>
+                <td>44.8%</td>
             </tr>
             <tr>
                 <th>Guarda Municipal</th>
-                <th>Municipal</th>
-                <th>107.400</th>
-                <th>Não identificado</th>
-                <th>N/A</th>
-                <th>N/A</th>
+                <td>Municipal</td>
+                <td>107.400</td>
+                <td>Não identificado</td>
+                <td>N/A</td>
+                <td>N/A</td>
             </tr>
             <tr>
                 <th>Polícia Rodoviária Federal</th>
-                <th>Federal</th>
-                <th>~13.000</th>
-                <th>~13.343</th>
-                <th>343</th>
-                <th>~2,5%</th>
+                <td>Federal</td>
+                <td>~13.000</td>
+                <td>~13.343</td>
+                <td>343</td>
+                <td>~2,5%</td>
             </tr>            
         </tbody>
 
         <tfoot>          
-
+            <tr>
+                <th>Total de Ativos</th>
+                <td>0000000</td>
+            </tr>
         </tfoot>
 
     </table>
@@ -70,7 +111,7 @@
             <p>
                 Como os dados de preenchimento de vagas variam agressivamente e o detalhamento exato dos 27 estados exige acesso à íntegra do relatório do FBSP, o levantamento consolida as unidades federativas nos extremos de ocupação:
             </p>
-            <table>
+            <table class="tab2">
                 <thead>
                     <tr>
                         <th>Estado</th>
@@ -82,33 +123,33 @@
                 <tbody>
                     <tr>
                         <th>Ceará</th>
-                        <th>Melhor Cenário Nacional/th>
-                        <th>100% de ocupação (0% de déficit)</th>
+                        <td>Melhor Cenário Nacional</td>
+                        <td>100% de ocupação (0% de déficit)</td>
                     </tr>
                     <tr>
                         <th>São Paulo</th>
-                        <th>Alto preenchimento</th>
-                        <th>82% de ocupação (Déficit de 18%)</th>
+                        <td>Alto preenchimento</td>
+                        <td>82% de ocupação (Déficit de 18%)</td>
                     </tr>
                     <tr>
                         <th>Espírito Santo</th>
-                        <th>Alto preenchimento</th>
-                        <th>88% de ocupação (Déficit de 12%)</th>
+                        <td>Alto preenchimento</td>
+                        <td>88% de ocupação (Déficit de 12%)</td>
                     </tr>
                     <tr>
                         <th>Amapá</th>
-                        <th>Déficit Grave</th>
-                        <th>43,5%% de ocupação (Déficit de 54,7%)</th>               
+                        <td>Déficit Grave</td>
+                        <td>43,5%% de ocupação (Déficit de 54,7%)</td>               
                     </tr>
                     <tr>
                         <th>Goiás</th>
-                        <th>Déficit Crítico</th>
-                        <th>37,4% de ocupação (Déficit de 62,6%)</th>               
+                        <td>Déficit Crítico</td>
+                        <td>37,4% de ocupação (Déficit de 62,6%)</td>               
                     </tr>
                     <tr>
                         <th>Tocantins</th>
-                        <th>Pior Cenário Nacional</th>
-                        <th>34,9% de ocupação (Déficit de 65,1%)</th>               
+                        <td>Pior Cenário Nacional</td>
+                        <td>34,9% de ocupação (Déficit de 65,1%)</td>               
                     </tr>
             
                 </tbody>
