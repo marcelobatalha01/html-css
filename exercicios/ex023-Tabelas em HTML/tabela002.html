@@ -10,6 +10,7 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: 0.8em;
         }
+
         table.tab1{
             width: 800px;
             border-collapse: collapse;
@@ -30,16 +31,38 @@
             color: white;
         }
 
-        td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
+        caption {
+            background-color: lightgrey;
+            font-size: 1em;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        tbody > tr:nth-child(odd) {
+           background-color: white
+        }
+
+        tbody > tr:nth-child(even) {
+           background-color: lightgray;
         }
 
         th {
             border: 1px solid black;
             padding: 10px;
         }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tfoot {
+            background-color: black;
+            color: white;
+        }
+
+        
 
     </style>
 
@@ -48,20 +71,21 @@
 <body>
     <h1>Cenário do contigente policial por Estado (2026)</h1>
     <table class="tab1">
+        <caption class="tab1">Contingende de Policiais Militares e Civis dos Estados</caption>
         <thead>
             <tr>
-                <th>Intituição</th>
-                <th>Esfera</th>
-                <th>Efetivo Atual</th>
-                <th>Previsto em Lei</th>
-                <th>Défit Absoluto</th>
-                <th>% de Déficit</th>
+                <th scope="col" style="width: 180px;">Intituição</th>
+                <th scope="col">Esfera</th>
+                <th scope="col">Efetivo Atual</th>
+                <th scope="col">Previsto em Lei</th>
+                <th scope="col">Déficit Absoluto</th>
+                <th scope="col">% de Déficit</th>
             </tr>
         </thead>
         
         <tbody>
             <tr>
-                <th>Polícia Militar</th>
+                <th scope="row">Polícia Militar</th>
                 <td>Estadual (27 UFs)</td>
                 <td>413.319</td>
                 <td>628.732</td>
@@ -69,7 +93,7 @@
                 <td>34,2%</td>
             </tr>
             <tr>
-                <th>Polícia Civil</th>
+                <th scope="row">Polícia Civil</th>
                 <td>Estadual (27 UFs)</td>
                 <td>96.902</td>
                 <td>175.477</td>
@@ -77,15 +101,15 @@
                 <td>44.8%</td>
             </tr>
             <tr>
-                <th>Guarda Municipal</th>
+                <th scope="row">Guarda Municipal</th>
                 <td>Municipal</td>
                 <td>107.400</td>
                 <td>Não identificado</td>
-                <td>N/A</td>
-                <td>N/A</td>
+                <td>*N/A</td>
+                <td>*N/A</td>
             </tr>
             <tr>
-                <th>Polícia Rodoviária Federal</th>
+                <th scope="row">Polícia Rodoviária Federal</th>
                 <td>Federal</td>
                 <td>~13.000</td>
                 <td>~13.343</td>
@@ -96,8 +120,8 @@
 
         <tfoot>          
             <tr>
-                <th>Total de Ativos</th>
-                <td>0000000</td>
+                <th scope="row"><strong>Total</strong></th>
+                <td><strong>0000000</strong></td>
             </tr>
         </tfoot>
 
@@ -112,42 +136,43 @@
                 Como os dados de preenchimento de vagas variam agressivamente e o detalhamento exato dos 27 estados exige acesso à íntegra do relatório do FBSP, o levantamento consolida as unidades federativas nos extremos de ocupação:
             </p>
             <table class="tab2">
+                <caption>Estados em Nível Crítico de Ocupação Policial</caption>
                 <thead>
                     <tr>
-                        <th>Estado</th>
-                        <th>Situação</th>
-                        <th>Nível de Ocupação Geral</th>
+                        <th scope="col" style="width: 100px;">Estado</th>
+                        <th scope="col" style="width: 150px;">Situação</th>
+                        <th scope="col" style="width: 250px;">Nível de Ocupação Geral</th>
                     </tr>
                 </thead>
                 
                 <tbody>
                     <tr>
-                        <th>Ceará</th>
+                        <th scope="row">Ceará</th>
                         <td>Melhor Cenário Nacional</td>
                         <td>100% de ocupação (0% de déficit)</td>
                     </tr>
                     <tr>
-                        <th>São Paulo</th>
+                        <th scope="row">São Paulo</th>
                         <td>Alto preenchimento</td>
                         <td>82% de ocupação (Déficit de 18%)</td>
                     </tr>
                     <tr>
-                        <th>Espírito Santo</th>
+                        <th scope="row">Espírito Santo</th>
                         <td>Alto preenchimento</td>
                         <td>88% de ocupação (Déficit de 12%)</td>
                     </tr>
                     <tr>
-                        <th>Amapá</th>
+                        <th scope="row">Amapá</th>
                         <td>Déficit Grave</td>
                         <td>43,5%% de ocupação (Déficit de 54,7%)</td>               
                     </tr>
                     <tr>
-                        <th>Goiás</th>
+                        <th scope="row">Goiás</th>
                         <td>Déficit Crítico</td>
                         <td>37,4% de ocupação (Déficit de 62,6%)</td>               
                     </tr>
                     <tr>
-                        <th>Tocantins</th>
+                        <th scope="row">Tocantins</th>
                         <td>Pior Cenário Nacional</td>
                         <td>34,9% de ocupação (Déficit de 65,1%)</td>               
                     </tr>
