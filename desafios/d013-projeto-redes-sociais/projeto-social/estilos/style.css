@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    min-height: 100vh; /* vh é a altura total do navegador */
+    width: 100vw; /* vw é a largura total do navegador */
+    background-color: transparent; /* esse fundo é só pra entender o que está acontecendo */
+    overflow: hidden;
+}
+
+body {
+    background: url('../imagens/fundo-madeira.jpg') no-repeat center center;
+    background-size: cover; /* para o fundo cobrir a tela interia */
+     /* para não ter rolagem */
+}
+
+main {
+    position: relative; /* para poder centralizar o telefone (conteiner de fora) */
+    height: 100vh;    
+    /* background-color: green; esse fundo é só pra entender o que está acontecendo */
+}
+
+section#telefone {
+    position: absolute; /* a partir do posicionamento absoluto, consigo posicionar no topo e na esquerda (conteiner de dentro) */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* esse comando faz o retangulo azul ficar exatamente no meio da tela */
+
+    height: 627px; /* 500px é só um chute incial para testar a altura do telefone */
+    width: 311px; /* 500px é só um chute incial para testar a largura do telefone */
+    /* background-color: blue; esse fundo é só pra entender o que está acontecendo */
+
+    background: url('../imagens/frame-iphone.png') no-repeat;
+}
+
+iframe#tela {
+    position: absolute;
+    top: 79px;
+    left: 21px;
+    width: 269px;
+    height: 473px;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+    box-sizing: border-box;
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.600);
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+    transition: transform 0.3s;
+    transition: boder 0.5s;
+}
