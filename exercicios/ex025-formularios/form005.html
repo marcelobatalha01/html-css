@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula 8 - Checkbox e Radio Button </title>
+</head>
+<body>
+    <h1>Formulários - Checkbox e Radio Button</h1>
+
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Orientação Sexual:</legend>
+                <input type="radio" name="sexo" id="isxmas" checked value="M"> <label for="isxmas">Maculino</label> <br>
+                <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Feminino</label> <br>
+                <input type="radio" name="sexo" id="isxninform" value="N"> <label for="isxninform">Não informado</label> <br>
+                <input type="radio" name="sexo" id="isxLGBTQIA+" value="L"> <label for="isxLGBTQIA+">LGBTQIA+</label> <br>
+
+            
+            </fieldset>
+
+            <fieldset>
+                <legend>Pesquisa de Esportes Favoritos: </legend>
+                <input type="checkbox" name="espfut" id="iespfut" checked> <label for="iespfut">Futebol</label> <br>
+                <input type="checkbox" name="espbas" id="iespbas"> <label for="iespbas">Basquete</label> <br>
+                <input type="checkbox" name="espnat" id="iespnat"> <label for="iespnat">Natação</label> <br>
+                <input type="checkbox" name="espcor" id="iespcor"> <label for="iespcor">Corrida</label> <br>
+                <input type="checkbox" name="espvol" id="iespvol"> <label for="iespvol">Volei</label> <br>
+                <input type="checkbox" name="espsal" id="iespsal"> <label for="iespsal">Futebol de Salão</label> <br>
+                <input type="checkbox" name="espbt" id="iespbt"> <label for="iespbt">Beach Tennis</label> <br>
+
+            </fieldset>        
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+    
+</body>
+</html>
