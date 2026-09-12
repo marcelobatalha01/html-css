@@ -10,11 +10,12 @@
     box-sizing: border-box;
 }
 
-body, html {
-    /* width: 100vw; 
+    /* body, html {
+    width: 100vw; 
     height: 100vh; deletou estas configuraçãos para tirar a rolagem lateral e vertical da tela. 
-    Deixou o html com height (abaixo)*/
-}
+    Deixou o html com height (abaixo)
+    */
+
 html {
     height: 100vh;
 }
@@ -50,6 +51,7 @@ img {
 
 img#phone { display: block; }
 img#tablet { display: none; }
-img#print { display: none; }
-img#pc { display: none; }
+img#note-pc { display: none; }
+img#pcgrande { display: none; }
 img#tv { display: none; }
+img#print { display: none; }
