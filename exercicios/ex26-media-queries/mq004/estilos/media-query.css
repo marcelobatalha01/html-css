@@ -12,56 +12,51 @@ TV / Telas 4K: acima de 1400px;
 
 */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) { */ TABLET E CELULAR DEITADO */
 
     body {
-        background-image: url(../imagens/back-phone.jpg);
-    }
-    img#phone { display: block; }
-    img#tablet { display: none; }
-    img#note-pc { display: none}
-    img#pcgrande { display: none; }
-    img#tv { display: none; }
-    img#print { display: none; } 
-    }
-
-@media screen and (min-width: 768px) { */ TABLET E CELULAR DEITADO */
-
-    body {
-        background-image: url(../imagens/back-tablet.jpg);
+        background-image: url('../imagens/back-tablet.jpg');
     }
     
     img#phone { display: none; }
     img#tablet { display: block; }
-    img#note-pc { display: none}
+    img#note-pc { display: none; }
     img#pcgrande { display: none; }
     img#tv { display: none; }
     img#print { display: none; }            
 }
 
-@media screen and (min-width: 992px) { */ DESKTOP E DESKTOP */
+@media screen and (min-width: 992px) and (max-width: 1200px) { */ NOTEBOOK E DESKTOP */
 
-        body {
-            background-image: url(../imagens/back-pc.jpg);
-        }
+    body {
+        background-image: url('../imagens/back-pc.jpg');
+    }
+
+    main {
+    width: 600px;
+    }
 
     img#phone { display: none; }
     img#tablet { display: none; }
-    img#note-pc { display: block }
+    img#note-pc { display: block; }
     img#pcgrande { display: none; }
     img#tv { display: none; }
     img#print { display: none; }
 }
 
-@media screen and (min-width: 1200px) { */ DECKTOP GRANDE */
+@media screen and (min-width: 1200px) and (max-width: 1400px) { */ DECKTOP GRANDE */
 
     body {
-        background-image: url(../imagens/back-pcgrande.jpg);
+        background-image: url('../imagens/back-pcgrande.jpg');
+    }
+
+    main {
+    width: 700px;
     }
 
     img#phone { display: none; }
     img#tablet { display: none; }
-    img#note-pc { display: none }
+    img#note-pc { display: none; }
     img#pcgrande { display: block; }
     img#tv { display: none; }  
     img#print { display: none; }
@@ -70,12 +65,16 @@ TV / Telas 4K: acima de 1400px;
 @media screen and (min-width: 1400px) { * / SMART TV E TELA WIDE SCREEN * /
 
     body {
-        background-image: url(../imagens/back-tv.jpg);
+        background-image: url('../imagens/back-tv.jpg');
+    }
+
+    main {
+    width: 800px;
     }
     
     img#phone { display: none; }
     img#tablet { display: none; }
-    img#note-pc { display: none }
+    img#note-pc { display: none; }
     img#pcgrande { display: none; }
     img#tv { display: block; }
     img#print { display: none; }
@@ -85,12 +84,30 @@ TV / Telas 4K: acima de 1400px;
 @media print { */ IMPRESSORAS */
 
     body {
-        background-image: url(../imagens/back-print.jpg);
+        background-image: url('../imagens/back-print.jpg'); /* Denecessário para Impressão no papel. */
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after {
+    content: 'Essa impressão foi feita através do Site www.cursoemvido.com';
+    text-decoration: overline;
+    text-align: center;
+
     }
 
     img#phone { display: none; }
     img#tablet { display: none; }
-    img#note-pc { display: none }
+    img#note-pc { display: none; }
     img#pcgrande { display: none; }
     img#tv { display: none; }
     img#print { display: block; }
