@@ -12,10 +12,10 @@ TV / Telas 4K: acima de 1400px;
 
 */
 
-@media screen and (min-width: 768px) and (max-width: 992px) { */ TABLET E CELULAR DEITADO */
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET E CELULAR DEITADO */
 
     body {
-        background-image: url('../imagens/back-tablet.jpg');
+        background-image: url(../imagens/back-tablet.jpg);
     }
     
     img#phone { display: none; }
@@ -26,14 +26,14 @@ TV / Telas 4K: acima de 1400px;
     img#print { display: none; }            
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) { */ NOTEBOOK E DESKTOP */
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* NOTEBOOK E DESKTOP */
 
     body {
-        background-image: url('../imagens/back-pc.jpg');
+        background-image: url(../imagens/back-pc.jpg);
     }
 
     main {
-    width: 600px;
+    width: 90vw;
     }
 
     img#phone { display: none; }
@@ -44,14 +44,14 @@ TV / Telas 4K: acima de 1400px;
     img#print { display: none; }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1400px) { */ DECKTOP GRANDE */
+@media screen and (min-width: 1200px) and (max-width: 1400px) { /* DECKTOP GRANDE */
 
     body {
-        background-image: url('../imagens/back-pcgrande.jpg');
+        background-image: url(../imagens/back-pcgrande.jpg);
     }
 
     main {
-    width: 700px;
+    width: 90vw;
     }
 
     img#phone { display: none; }
@@ -62,14 +62,14 @@ TV / Telas 4K: acima de 1400px;
     img#print { display: none; }
 }
 
-@media screen and (min-width: 1400px) { * / SMART TV E TELA WIDE SCREEN * /
+@media screen and (min-width: 1400px) { /* SMART TV E TELA WIDE SCREEN */
 
     body {
-        background-image: url('../imagens/back-tv.jpg');
+        background-image: url(../imagens/back-tv.jpg);
     }
 
     main {
-    width: 800px;
+    width: 90vw;
     }
     
     img#phone { display: none; }
@@ -84,7 +84,7 @@ TV / Telas 4K: acima de 1400px;
 @media print { */ IMPRESSORAS */
 
     body {
-        background-image: url('../imagens/back-print.jpg'); /* Denecessário para Impressão no papel. */
+        background-image: url(../imagens/back-print.jpg); /* Denecessário para Impressão no papel. */
         font-family: 'Courier New', Courier, monospace;
     }
 
@@ -102,7 +102,6 @@ TV / Telas 4K: acima de 1400px;
     content: 'Essa impressão foi feita através do Site www.cursoemvido.com';
     text-decoration: overline;
     text-align: center;
-
     }
 
     img#phone { display: none; }
