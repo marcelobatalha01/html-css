@@ -2,6 +2,63 @@
 
 /* Todas as demais mídias */
 
-@media print {
+/* Typical Device Breakpoints:
+
+Dispositivos móveis: até 576px;
+Tablet em pé e Celular Deitado: até 768px;
+Notebook e Desktop: 992px;
+Desktop Grande: 1200px;
+TV / Telas 4K: acima de 1400px;
+
+*/
+
+/* @media screen and (max-width: 576px) {    
+}
+Essa configuração são para pequenas telas, pois a media query já está pronta não preciso delas. 
+O site já está proto no styles.css utilizando MOBILE FIRIST */
+
+
+@media print { */ IMPRESSORAS */
+
+}
+
+@media screen and (min-width: 768px) { */ TABLET EM PÉ E CELULAR DEITADO */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: block; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+            
+}
+
+@media screen and (min-width: 992px) { */ NOTEBOOK E DESKTOP */
+        body {
+            background-image: url(../imagens/back-pc.jpg);
+        }
+        img#phone { display: none; }
+        img#tablet { display: none; }
+        img#print { display: none; }
+        img#pc { display: block; }
+        img#tv { display: none; }
+}
+
+@media screen and (min-width: 1200px) { */ DECKTOP GRANDE */
+    
+
+}
+
+@media screen and (min-width: 1400px) { */ SMART TV / TELA 4K */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+        img#phone { display: none; }
+        img#tablet { display: none; }
+        img#print { display: none; }
+        img#pc { display: none; }
+        img#tv { display: block; }
     
 }
