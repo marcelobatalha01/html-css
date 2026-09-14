@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsivo com Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Site Beach Tennis</h1>
-        <menu>
+
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+
+        <menu id="itens">
             <ul>
                 <li><a href="https://totalpass.com/br/blog/atividade-fisica/beach-tennis-o-que-e-suas-regras-e-beneficios/" target="_blank">Home</a></li>
                 <li><a href="https://www.cbt-tenis.com.br/beachtennis/attached/93" target="_blank">História do Tenis de Praia</a></li>
@@ -30,6 +34,16 @@
                 
         </article>
     </main>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
     
 </body>
 </html>
