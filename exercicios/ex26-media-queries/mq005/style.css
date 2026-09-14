@@ -1,6 +1,65 @@
 @charset "UTF-8";
 
-body, html {
-    background-color: rgba(80, 91, 55, 0.414);
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+body, html {
+    background-color: rgba(78, 88, 55, 0.186);
+}
+
+header {
+    background-color: gray;
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+menu {
+    display: block;
+}
+
+menu > ul {
+    list-style: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    border-top: 2px solid rgb(202, 202, 202);
+}
+
+menu > ul > li > a:hover {
+    background-color: gray;
+}
+
+main {
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+artice > h2 {
+    margin bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+    margin: 20px;
+    text-indent: 30px;
+
+}
