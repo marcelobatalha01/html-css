@@ -3,7 +3,6 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -34,15 +33,12 @@ span#burguer:hover {
     background-color: white;
     color: black;
 }
-
 menu {
     display: none;
 }
-
 menu > ul {
     list-style-type: none;
 }
-
 menu > ul > li > a {
     display: block;
     padding: 10px;
@@ -52,11 +48,9 @@ menu > ul > li > a {
     color: white;
     border-top: 2px solid rgb(202, 202, 202);
 }
-
 menu > ul > li > a:hover {
     background-color: gray;
 }
-
 main {
     width: 90vw;
     background-color: white;
@@ -65,14 +59,12 @@ main {
     padding: 20px;
     border-radius: 10px;    
 }
-
-artice > h2 {
-    margin bottom: 20px;
+article > h2 {
+    margin-bottom: 20px;
+    margin-left: 20px;
 }
-
 article > p {
     text-align: justify;
     margin: 20px;
     text-indent: 30px;
-
 }
