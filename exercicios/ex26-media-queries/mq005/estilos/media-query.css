@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints:
+
+Dispositivos móveis: até 576px;
+Tablet em pé e Celular Deitado: até 768px;
+Notebook e Desktop: 992px;
+Desktop Grande: 1200px;
+TV / Telas 4K: acima de 1400px;
+
+*/
+
+@media screen and (min-width: 768px) { /* TABLET E CELULAR DEITADO */
+        span#burguer {
+            display: none;
+        }
+        menu {
+            display: block;
+        }
+
+        menu > ul > li {
+            display: inline-block;
+        }
+
+        main {
+            width: 768px;
+        }
+}
+
