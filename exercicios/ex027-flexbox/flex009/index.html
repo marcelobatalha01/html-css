@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cap27 - Aula 1 - FLEXBOX</title>
+    <title>Cap27 - Aula 9 - FLEXBOX</title>
 
     <style>
         div.conteiner {
             background-color: aquamarine;
-            display: flex;           
+            display: flex;        
+            flex-flow: row nowrap;   
 
         }
 
         div.item {
             background-color: bisque;
             border: 1px solid black;
-            flex: auto;
             text-align: center;
+            flex-basis: 150px;
+            
+            
         }
     </style>
 </head>
 <body>
     <div class="conteiner">
         <div class="item">A</div>
-        <div class="item">B</div>
+        <div class="item">Conteúdo</div>
         <div class="item">C</div>
-        <div class="item">D</div>
+        <div class="item">Conteúdo maior</div>
         <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item">Conteúdo maior ainda</div>
+        <div class="item">Conteúdo gigantesco para exercício</div>
     </div>
     
 </body>
