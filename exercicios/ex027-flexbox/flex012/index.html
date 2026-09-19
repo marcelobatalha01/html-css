@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap27 - Aula 1 - FLEXBOX</title>
+
+    <style>
+        * {
+            margin: 5px;
+            padding: 5px;
+        }
+        div.conteiner {
+            background-color: aquamarine;
+            display: flex; /* É flex a parte que está na cor aquamarine */ 
+            flex-flow: row nowrap;        
+
+        }
+
+        div.item {
+            background-color: bisque;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+
+        div#cxA {
+            /* 
+            flex-grow: 0;
+            flex-shrink: 1;            
+            flex-basis: 200px; 
+            */
+            
+            flex: 0 1 150px;
+        }
+        div#cxB {
+            /* 
+            flex-grow: 1;
+            flex-shrink: 1;            
+            flex-basis: 200px; 
+            */
+
+            flex: 1 1 200px;
+        }
+        div#cxC {
+            /* 
+            flex-grow: 0;  
+            flex-shrink: 1;            
+            flex-basis: 200px; 
+            */
+            
+            flex: 0 1 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+      
+    </div>
+    
+</body>
+</html>
