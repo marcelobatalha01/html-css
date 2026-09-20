@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body {
+    background-color: red;
+}
+
+/* O menu fica em pé quando reduz o tamanho do negador de TABLET para Smartphone */
+header {
+    flex-flow: column nowrap;
+}
+
+/* Coloca o CONTEINER inteiro na vertical, posicionando o MEU SITE na mesma coluna dos links OPÇÃO. */
+header > nav {
+    flex-flow: column nowrap;
+}
+
+/* Resolve o problema do espaço vazio entre a caixa do h1 (MEU SITE) a caixa do nav (OPÇÃO) */
+header > h1 {
+    flex-basis: 50px;
+}
+
+/* Faz as caixas dos botões de OPÇÃO ficarem com largura 90% da tela */
+header > nav > a {
+    width: 90vw;
+}

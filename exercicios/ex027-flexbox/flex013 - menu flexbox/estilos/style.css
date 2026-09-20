@@ -26,12 +26,13 @@ header {
 }
 
 header > h1 {
-    border: 1px dotted black;
+    border: 1px dotted black; /* Esta configuração foi utilizada apenas para visualizar o comportamento da caixa do H1 com o aplicação do FLEXBOX*/
     flex: 0 0 200px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.588);
 }
 
 header > nav {
-    border: 1px dotted black;
+    border: 1px dotted black; /* Esta configuração foi utilizada apenas para visualizar o comportamento da caixa do NAV com o aplicação do FLEXBOX*/
 
     display: flex;
     flex-flow: row wrap;
@@ -46,6 +47,7 @@ header > nav > a {
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
+
 }
 
 /* O que era preto fica branco e o que era branco fica preto */
@@ -62,3 +64,5 @@ main {
     border-radius: 10px;
     box-shadow: 2px 2px 3px rgb(118, 118, 118);
 }
+
+
