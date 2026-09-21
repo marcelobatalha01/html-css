@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 530px) {
+    /* Permite que o container da mídia encolha em telas menores */
+    article > div.media {
+        flex: 1 1 100%;
+    }
+
+    /* Reduz a imagem proporcionalmente */
+    div.media > img {
+        width: 100%;
+        height: auto;
+        max-width: 400px; /* Impede que ultrapasse o tamanho original em telas maiores */
+    }
+}

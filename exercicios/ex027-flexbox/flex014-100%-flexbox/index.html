@@ -4,37 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conteúdo 100% FLEXBOX</title>
+    
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    
 </head>
 <body>
-    <header>
+    <!-- NÃO É FLEXÍVEL (em branco)-->
+    <header class="normal">
             <h1>Exemplo de Conteúdo Flexível</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium esse dicta minus temporibus incidunt praesentium fugiat numquam, quis illo nesciunt quaerat quae voluptate itaque dolores? Laudantium sequi at illum iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae in laudantium quibusdam accusantium sequi eius eaque quod adipisci doloremque facilis delectus deserunt reiciendis quasi, dicta necessitatibus quos? Illum, suscipit labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis illo aspernatur sint velit minus error dignissimos et aut totam? Eaque fugit vitae dolorem incidunt veniam reprehenderit, unde sit aliquam?</p>
     </header>
+
     <main>
-        <section>
-            <h2>Praias do Brasil</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium esse dicta minus temporibus incidunt praesentium fugiat numquam, quis illo nesciunt quaerat quae voluptate itaque dolores? Laudantium sequi at illum iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae in laudantium quibusdam accusantium sequi eius eaque quod adipisci doloremque facilis delectus deserunt reiciendis quasi, dicta necessitatibus quos? Illum, suscipit labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis illo aspernatur sint velit minus error dignissimos et aut totam? Eaque fugit vitae dolorem incidunt veniam reprehenderit, unde sit aliquam?</p>
+        <!-- Início da seção Flex-Content (caixa cinza)-->
+        <section class="flex-content">
+            <article class="media-text">
+                <div class="text">
+                    <h2>Elemento Media->Text</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quae eligendi dolorum ex hic culpa a! Voluptatibus et possimus, molestiae cumque perferendis minus tempora numquam facere nostrum assumenda dolor doloribus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore beatae harum repellat. Ipsam reiciendis placeat cum laudantium voluptatum mollitia laboriosam, in, quis saepe quae quos similique. Consectetur esse magnam magni.</p>                  
+                </div>
+                <div class="media">
+                    <img src="imagens/praia_1920-red.jpg" alt="Praias">
+                </div>                
+            </article>
 
+            <article class="text-media">
+                <div class="text">
+                     <h2>Elemento Text->Media</h2>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius distinctio neque quod, libero placeat voluptatibus dignissimos quia fuga dolore nam quos, nobis quibusdam voluptates nulla adipisci necessitatibus porro excepturi delectus.</p>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cupiditate eos ea, sequi id inventore sed assumenda optio odio distinctio veritatis laudantium, numquam quis quam. In ut consequatur similique tempore!</p>
+                </div>
+                <div class="media">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jQMbuK6URws?si=gRJ97xVcGkUh-3uR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
         </section>
-            <h2>Praias do Caribe</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium esse dicta minus temporibus incidunt praesentium fugiat numquam, quis illo nesciunt quaerat quae voluptate itaque dolores? Laudantium sequi at illum iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae in laudantium quibusdam accusantium sequi eius eaque quod adipisci doloremque facilis delectus deserunt reiciendis quasi, dicta necessitatibus quos? Illum, suscipit labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis illo aspernatur sint velit minus error dignissimos et aut totam? Eaque fugit vitae dolorem incidunt veniam reprehenderit, unde sit aliquam?</p>
+        <!-- Fim da seção Flex-Content -->
 
-        <section>
-            <h2>Praias Paradisíacas</h2>
+        <!-- Início da seção Normal (em branco) ou seja NÃO FLEXÍVEL -->
+        <section class="normal">
+            <h2>Praias Nordestinas</h2>
+            <img src="imagens/praia_1920-red2.jpg" alt="Praia paradisíaca">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium esse dicta minus temporibus incidunt praesentium fugiat numquam, quis illo nesciunt quaerat quae voluptate itaque dolores? Laudantium sequi at illum iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae in laudantium quibusdam accusantium sequi eius eaque quod adipisci doloremque facilis delectus deserunt reiciendis quasi, dicta necessitatibus quos? Illum, suscipit labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis illo aspernatur sint velit minus error dignissimos et aut totam? Eaque fugit vitae dolorem incidunt veniam reprehenderit, unde sit aliquam?</p>
-
         </section>
 
-        <section>
-
+        <section class="normal">
+            <h2>Praias do Sul</h2>
+            <img src="imagens/priaia_1920-red3.jpg" alt="Praia paradisíaca">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium esse dicta minus temporibus incidunt praesentium fugiat numquam, quis illo nesciunt quaerat quae voluptate itaque dolores? Laudantium sequi at illum iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae in laudantium quibusdam accusantium sequi eius eaque quod adipisci doloremque facilis delectus deserunt reiciendis quasi, dicta necessitatibus quos? Illum, suscipit labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis illo aspernatur sint velit minus error dignissimos et aut totam? Eaque fugit vitae dolorem incidunt veniam reprehenderit, unde sit aliquam?</p>
         </section>
-
+        <!-- Fim da seção Normal-->
     </main>
+
+        <!--Início do Rodapé -->
     <footer>
-
+         <section class="normal">
+            <h2>Conteúdo Normal</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium esse dicta minus temporibus incidunt praesentium fugiat numquam, quis illo nesciunt quaerat quae voluptate itaque dolores? Laudantium sequi at illum iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae in laudantium quibusdam accusantium sequi eius eaque quod adipisci doloremque facilis delectus deserunt reiciendis quasi, dicta necessitatibus quos? Illum, suscipit labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis illo aspernatur sint velit minus error dignissimos et aut totam? Eaque fugit vitae dolorem incidunt veniam reprehenderit, unde sit aliquam?</p>
+        </section>
     </footer>
-
+    <!-- Fim do Rodapé -->
     
 </body>
 </html>
